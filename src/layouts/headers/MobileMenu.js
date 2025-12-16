@@ -13,9 +13,6 @@ const MobileMenu = ({ mobileTrigger, setMobileTrigger }) => {
     >
       <div className="panel-overlay" onClick={() => setMobileTrigger()} />
       <div className="panel-inner">
-        <div className="panel-logo">
-          <img src="/rscarelogo.png" alt="RS Care Foundation" />
-        </div>
         <nav className="mobile-menu">
           <ul className="primary-menu">
             <li className={activeMenu === "/" ? "active" : ""}>

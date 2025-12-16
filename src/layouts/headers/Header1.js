@@ -77,8 +77,8 @@ const Header1 = ({ headerTopbar, position }) => {
                   <Image
                     src={logo}
                     alt="RS Care Foundation"
-                    width={50}
-                    height={50}
+                    width={60}
+                    height={60}
                   />
                 </a>
               </Link>

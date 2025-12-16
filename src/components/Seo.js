@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 
-const Seo = ({ pageTitle }) => {
+const Seo = ({ pageTitle, ogImage }) => {
   return (
     <Head>
       <title>
@@ -18,6 +18,22 @@ const Seo = ({ pageTitle }) => {
         content="de-addiction, alcohol rehab, drug rehab, counseling, detox, RS Care Foundation"
       />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta
+        property="og:title"
+        content={
+          pageTitle ? `${pageTitle} | RS Care Foundation` : "RS Care Foundation"
+        }
+      />
+      <meta
+        property="og:description"
+        content="RS Care Foundation is a leading Alcohol and Drug De-addiction Centre in India."
+      />
+      <meta
+        property="og:image"
+        content={ogImage || "https://rscarefoundation.in/rscarelogo.png"}
+      />
+      <meta property="og:url" content="https://rscarefoundation.in/" />
+      <meta property="og:type" content="website" />
       <link rel="icon" href="/favicon.png" />
     </Head>
   );

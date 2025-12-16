@@ -34,7 +34,7 @@ const Counter = dynamic(() => import("../src/components/Counter"), {
 const Index = () => {
   return (
     <Layouts>
-      <Seo pageTitle="Home" />
+      <Seo pageTitle="Home" ogImage="/rscarelogo.png" />
       <>
         {/*====== Hero Area Start ======*/}
         <section className="p-0" style={{ paddingTop: 0, paddingBottom: 0 }}>
